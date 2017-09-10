@@ -11,10 +11,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="25dp"
-        android:layout_marginBottom="100dp"
+        android:layout_marginBottom="20dp"
         android:textSize="20sp"
         android:text="@string/question_text"/>
 
+    <!--
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -34,6 +35,32 @@
             android:text="@string/false_button"
             tools:ignore="ButtonStyle"/>
     </LinearLayout>
+    -->
+        <RadioGroup
+            android:id="@+id/options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/option_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_1"/>
+            <RadioButton
+                android:id="@+id/option_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_2"/>
+            <RadioButton
+                android:id="@+id/option_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_3"/>
+            <RadioButton
+                android:id="@+id/option_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option_4"/>
+        </RadioGroup>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -45,15 +72,18 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:background="#ffffff"
+            android:layout_marginEnd="70dp"
             android:layout_marginRight="70dp"
-            android:src="@mipmap/back"/>
+            android:src="@mipmap/back"
+            android:contentDescription="back"/>
 
         <ImageButton
             android:id="@+id/next_button"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:background="#ffffff"
-            android:src="@mipmap/next"/>
+            android:src="@mipmap/next"
+            android:contentDescription="next"/>
 
     </LinearLayout>
 </LinearLayout>

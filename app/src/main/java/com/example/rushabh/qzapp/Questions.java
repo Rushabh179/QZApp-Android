@@ -6,9 +6,9 @@ package com.example.rushabh.qzapp;
 
 public class Questions {
     private int mTextResId;
-    private boolean mAnswerTrue;
+    private int mAnswerTrue;
 
-    public Questions(int textResId, boolean answerTrue) {
+    public Questions(int textResId, int answerTrue) {
         mTextResId = textResId;
         mAnswerTrue = answerTrue;
     }
@@ -17,7 +17,7 @@ public class Questions {
         mTextResId = textResId;
     }
 
-    public void setAnswerTrue(boolean answerTrue) {
+    public void setAnswerTrue(int answerTrue) {
         mAnswerTrue = answerTrue;
     }
 
@@ -25,7 +25,7 @@ public class Questions {
         return mTextResId;
     }
 
-    public boolean isAnswerTrue() {
+    public int isAnswerTrue() {
         return mAnswerTrue;
     }
 }
