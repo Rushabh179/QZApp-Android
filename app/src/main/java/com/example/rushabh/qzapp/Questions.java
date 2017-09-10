@@ -5,27 +5,19 @@ package com.example.rushabh.qzapp;
  */
 
 public class Questions {
-    private int mTextResId;
-    private int mAnswerTrue;
+    private String mTextResId;
+    private String mAnswerTrue;
 
-    public Questions(int textResId, int answerTrue) {
-        mTextResId = textResId;
+    public Questions(String textRes, String answerTrue) {
+        mTextResId = textRes;
         mAnswerTrue = answerTrue;
     }
 
-    public void setTextResId(int textResId) {
-        mTextResId = textResId;
-    }
-
-    public void setAnswerTrue(int answerTrue) {
-        mAnswerTrue = answerTrue;
-    }
-
-    public int getTextResId() {
+    public String getTextResId() {
         return mTextResId;
     }
 
-    public int isAnswerTrue() {
+    public String isAnswerTrue() {
         return mAnswerTrue;
     }
 }
