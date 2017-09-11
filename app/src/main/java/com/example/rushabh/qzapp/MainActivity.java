@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String KEY_INDEX = "index";
+
     private RadioGroup mOptions;
     private ImageButton mNextButton, mBackButton;
     private TextView mQuestionText;
@@ -34,6 +36,10 @@ public class MainActivity extends AppCompatActivity {
                         getResources().getString(R.string.option_3)),
                 new Questions(getResources().getString(R.string.question_5),
                         getResources().getString(R.string.option_4)),};
+
+        if (savedInstanceState!=null){
+            mCurrentIndex=savedInstanceState.getInt(KEY_INDEX,0);
+        }
 
         mQuestionText = (TextView) findViewById(R.id.question_text);
         updateQuestion();
@@ -88,11 +94,19 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+
     }
 
     //Next Question
     private void updateQuestion() {
         String question = mQuestionBank[mCurrentIndex].getTextResId();
         mQuestionText.setText(question);
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle savedInstanceState) {
+        super.onSaveInstanceState(savedInstanceState);
+        savedInstanceState.putInt(KEY_INDEX,mCurrentIndex);
     }
 }
