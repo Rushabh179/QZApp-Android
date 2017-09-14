@@ -7,10 +7,12 @@ package com.example.rushabh.qzapp;
 public class Questions {
     private String mTextResId;
     private String mAnswerTrue;
+    private String mHintRes;
 
-    public Questions(String textRes, String answerTrue) {
-        mTextResId = textRes;
+    public Questions(String textResId, String answerTrue, String hintRes) {
+        mTextResId = textResId;
         mAnswerTrue = answerTrue;
+        mHintRes = hintRes;
     }
 
     public String getTextResId() {
@@ -19,5 +21,9 @@ public class Questions {
 
     public String isAnswerTrue() {
         return mAnswerTrue;
+    }
+
+    public String getHintRes() {
+        return mHintRes;
     }
 }

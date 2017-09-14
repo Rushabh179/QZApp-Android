@@ -19,4 +19,16 @@
     <string name="option_2">Option 2</string>
     <string name="option_3">Option 3</string>
     <string name="option_4">Option 4</string>
+
+    <string name="warning_text">Are you sure you want to do this?</string>
+    <string name="show_hint_button">Show Hint</string>
+    <string name="hint_button">Hint!</string>
+    <string name="helping_toast">Hints are here for you.</string>
+
+    <string name="hint_1">Hint 1</string>
+    <string name="hint_2">Hint 2</string>
+    <string name="hint_3">Hint 3</string>
+    <string name="hint_4">Hint 4</string>
+    <string name="hint_5">Hint 5</string>
+
 </resources>
